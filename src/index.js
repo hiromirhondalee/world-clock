@@ -32,8 +32,11 @@ function updateCity(event) {
 
   if (cityTimeZone === "current") {
     cityTimeZone = moment.tz.guess();
-    cityName = cityTimeZone.replace("_", " ").split("/")[1]+"📍";
+    cityName = cityTimeZone.replace("_", " ").split("/")[1] + "📍";
   }
+if (cityTimeZone=== "") {
+   location.reload();
+}
   let cityDateTime = moment().tz(cityTimeZone);
 
   let cityElement = document.querySelector("#cities");
@@ -45,7 +48,8 @@ function updateCity(event) {
         <div class="time">${cityDateTime.format(
           "h:mm:ss"
         )} <small>${cityDateTime.format("A")}</small></div>
-      </div>`;
+      </div>
+     `;
 }
 
 updateTime();
