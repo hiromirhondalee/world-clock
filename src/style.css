@@ -57,6 +57,7 @@ select {
 
 .city:last-child {
   border: none;
+  margin-bottom:0;
 }
 
 .time {
