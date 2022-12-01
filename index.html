@@ -9,12 +9,14 @@
   </head>
   <body>
     <div class="container">
-      <h1>World Clock</h1>
-      <span class="logo"
-        ><img src="images/LOGO.png" width="30px" alt=""
-      /></span>
+      <div class="header">
+        <h1>World Clock</h1>
+        <span class="logo"
+          ><img class="logo" src="images/LOGO.png" alt=""
+        /></span>
+      </div>
       <div>
-        <select>
+      <select>
           <option value="">Select a city...</option>
           <option value="london">London</option>
           <option value="newyork">New York</option>
@@ -22,15 +24,20 @@
         </select>
       </div>
       <div class="city">
+        <div>
         <h2>Tokyo 🇯🇵</h2>
         <div class="date">December 1st 2022</div>
-        <div class="time">12:35:15 PM</div>
+        </div>
+        <div class="time">12:35:15 <small>PM</small></div>
       </div>
-      <div class="city">
+     <div class="city">
+        <div>
         <h2>London 🇬🇧</h2>
         <div class="date">December 1st 2022</div>
-        <div class="time">12:35:15 AM</div>
+        </div>
+        <div class="time">12:35:15 <small>AM</small></div>
       </div>
+    </div>
     <footer>
       🙋🏻‍♀️ This project was coded by Hiromi Tanimura, and it is
       <a href="https://github.com/hiromirhondalee/world-clock" target="_blank"
